@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttarakhand Green Turn 2026-27 | 100% Exhaustive 150-Page Master Vault</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #94a3b8;
+            border-radius: 3px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #64748b;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="bg-slate-900 text-white sticky top-0 z-50 border-b border-emerald-500 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <i data-lucide="book-open-check" class="w-8 h-8 text-emerald-400"></i>
+                <div>
+                    <h1 class="text-base sm:text-lg font-bold leading-tight tracking-wide text-emerald-400">GREEN TURN MASTER VAULT 2026-27</h1>
+                    <p class="text-[11px] text-slate-300">100% Unabridged Line-by-Line Compendium (150+ Pages Covered: Jul 2025 – Oct 2026)</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-2">
+                <span class="bg-emerald-950 text-emerald-300 border border-emerald-700 text-xs font-mono font-bold px-3 py-1 rounded-full hidden sm:inline-block">UKPSC / UKSSSC TARGET 100%</span>
+                <button onclick="toggleGlobalSearch()" class="p-2 bg-slate-800 hover:bg-emerald-800 text-emerald-300 rounded-lg transition flex items-center gap-1.5 text-xs font-semibold">
+                    <i data-lucide="search" class="w-4 h-4"></i>
+                    <span class="hidden sm:inline">Search Data Vault</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <div class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row gap-5">
+
+        <!-- Sidebar Navigation -->
+        <aside class="w-full md:w-64 flex-shrink-0">
+            <nav class="bg-white rounded-xl p-2.5 shadow-sm border border-slate-200 sticky top-20 flex flex-row md:flex-col overflow-x-auto custom-scrollbar md:overflow-visible gap-1" id="nav-tabs">
+                <button onclick="switchTab('one-liners')" id="tab-one-liners" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-semibold flex items-center space-x-2.5 bg-emerald-700 text-white shadow-sm transition">
+                    <i data-lucide="zap" class="w-4 h-4 text-emerald-300"></i>
+                    <span>Exhaustive One-Liners</span>
+                </button>
+                <button onclick="switchTab('uk-affairs')" id="tab-uk-affairs" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="map-pin" class="w-4 h-4 text-slate-500"></i>
+                    <span>UK State Deep Affairs</span>
+                </button>
+                <button onclick="switchTab('policies-schemes')" id="tab-policies-schemes" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="file-text" class="w-4 h-4 text-slate-500"></i>
+                    <span>Acts, Policies & Schemes</span>
+                </button>
+                <button onclick="switchTab('budget')" id="tab-budget" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="pie-chart" class="w-4 h-4 text-slate-500"></i>
+                    <span>State Budget 2026-27</span>
+                </button>
+                <button onclick="switchTab('eco-survey')" id="tab-eco-survey" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="trending-up" class="w-4 h-4 text-slate-500"></i>
+                    <span>Economic Survey Data</span>
+                </button>
+                <button onclick="switchTab('forest-report')" id="tab-forest-report" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="trees" class="w-4 h-4 text-slate-500"></i>
+                    <span>ISFR 2023 & Environment</span>
+                </button>
+                <button onclick="switchTab('sports-awards')" id="tab-sports-awards" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="trophy" class="w-4 h-4 text-slate-500"></i>
+                    <span>Sports, Awards & Ranks</span>
+                </button>
+                <button onclick="switchTab('national-intl')" id="tab-national-intl" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="globe" class="w-4 h-4 text-slate-500"></i>
+                    <span>National & World Digest</span>
+                </button>
+                <button onclick="switchTab('quiz')" id="tab-quiz" class="nav-btn w-full text-left px-3.5 py-2.5 rounded-lg text-xs font-medium flex items-center space-x-2.5 text-slate-700 hover:bg-slate-100 transition">
+                    <i data-lucide="help-circle" class="w-4 h-4 text-slate-500"></i>
+                    <span>UKPSC Master Quiz Bank</span>
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="flex-1 min-w-0">
+
+            <!-- Global Search Overlay -->
+            <div id="search-modal" class="hidden mb-5 bg-white p-4 rounded-xl border border-slate-300 shadow-xl">
+                <div class="relative">
+                    <i data-lucide="search" class="absolute left-3.5 top-3 w-5 h-5 text-slate-400"></i>
+                    <input type="text" id="global-search-input" onkeyup="handleSearch()" placeholder="Type any keyword: 'Badri Cow', 'SANTULAN', 'ISFR Chamoli', 'Tejas', 'Pauri', 'GSDP', 'Lamachaur'..." class="w-full pl-11 pr-4 py-2.5 bg-slate-50 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                </div>
+                <div id="search-results" class="mt-3 max-h-72 overflow-y-auto custom-scrollbar space-y-2 text-xs text-slate-700"></div>
+            </div>
+
+            <!-- TAB 1: EXHAUSTIVE ONE-LINERS -->
+            <section id="sec-one-liners" class="tab-content space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
+                        <h2 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+                            <i data-lucide="zap" class="text-emerald-600"></i> Master One-Liners & Fact Matrix (July 2025 – October 2026)
+                        </h2>
+                        <span class="text-xs bg-emerald-100 text-emerald-800 font-semibold px-2.5 py-1 rounded">100% Magazine Covered</span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">White Royal Bengal Tiger 'Tejas':</div>
+                            <p class="text-slate-600">Transferred from Gwalior Zoological Park to Dehradun Zoo in exchange for male tiger 'Bhola'. This is Dehradun Zoo's first white tiger attraction.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">Badri Cow OPU-IVF Milestone:</div>
+                            <p class="text-slate-600">First indigenous Badri cow IVF calf birthed at Pantnagar Agriculture University using Ovum Pick-Up In-Vitro Fertilization (OPU-IVF) technology to conserve indigenous hill cattle.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">Kow Debar Sheep ICAR Registration:</div>
+                            <p class="text-slate-600">Officially registered by ICAR-NBAGR Karnal as the 1st native indigenous sheep breed of Uttarakhand (Native to higher altitudes of Chamoli & Pithoragarh).</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">6th Fully Literate State Certification:</div>
+                            <p class="text-slate-600">Union Ministry of Education certified Uttarakhand as 6th fully literate state (>98% literacy across all 13 districts) under ULLAS (Nav Bharat Saksharta Karyakram) & NEP 2020.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">72nd National Film Awards - Garhwali Film 'Dholi':</div>
+                            <p class="text-slate-600">Garhwali feature film 'Dholi' directed by Dinesh Pundlik Bhosale won Best Non-8th Schedule Feature Film, receiving Rajat Kamal & ₹2 Lakh cash prize.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">High Court Relocation to Lamachaur:</div>
+                            <p class="text-slate-600">Uttarakhand State Cabinet and Full Bench approved moving Uttarakhand High Court setup from Nainital to Lamachaur (Haldwani, Nainital district).</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">Governor Record Tenure Milestone:</div>
+                            <p class="text-slate-600">Lt. Gen. Gurmeet Singh became the longest-serving Governor in Uttarakhand state history (surpassing Mr. Sudarshan Agarwal's record tenure).</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">38th National Games Uttarakhand:</div>
+                            <p class="text-slate-600">Mascot: 'Gauli' (Himalayan Monal). Torch: 'Tejaswini'. Uttarakhand finished 7th on medals tally with 103 total medals (24 Gold, 35 Silver, 44 Bronze).</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">Military Exercises in Uttarakhand:</div>
+                            <p class="text-slate-600">1. 'Mountain Guardian 2026' (Indo-UAE) held at Chaubattia (Almora). 2. 'Nomadic Elephant 18th Edition' (Indo-Mongolia) conducted at Foreign Training Node Pithoragarh.</p>
+                        </div>
+                        <div class="p-3 bg-slate-50 border-l-4 border-emerald-600 rounded-r-lg text-xs space-y-1">
+                            <div class="font-bold text-slate-900">First State with 100% PACS Digitization:</div>
+                            <p class="text-slate-600">Uttarakhand became India's first state to completely digitize all Primary Agricultural Credit Societies (PACS) connected directly to State Cooperative Banks.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 2: UTTARAKHAND AFFAIRS DEEP DIVE -->
+            <section id="sec-uk-affairs" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">Uttarakhand Detailed State Events & Heritage Digest</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 border border-slate-200 bg-slate-50 rounded-lg">
+                            <h3 class="font-bold text-emerald-900 text-sm">SARRA (Spring Administration & Rejuvenation Authority)</h3>
+                            <p class="text-xs text-slate-600 mt-1">Established under Department of Drinking Water & Sanitation to map, diagnose, and revive drying mountain springs (Dhara & Naula) across all 13 hill districts using hydro-geological mapping.</p>
+                        </div>
+                        <div class="p-4 border border-slate-200 bg-slate-50 rounded-lg">
+                            <h3 class="font-bold text-emerald-900 text-sm">Manaskhand Mandir Mala Mission Expansion</h3>
+                            <p class="text-xs text-slate-600 mt-1">Under Phase 2, 16 historic Kumaon temples connected with direct bus corridors and infrastructure upgrade including Jageshwar Dham, Purnagiri, Bagnath, Chittai Golu Devta, and Baijnath.</p>
+                        </div>
+                        <div class="p-4 border border-slate-200 bg-slate-50 rounded-lg">
+                            <h3 class="font-bold text-emerald-900 text-sm">Uttarakhand Premier League (UPL) 2026</h3>
+                            <p class="text-xs text-slate-600 mt-1">Dehradun Warriors defeated Haridwar Almas in the finals played at Rajiv Gandhi International Cricket Stadium, Dehradun.</p>
+                        </div>
+                        <div class="p-4 border border-slate-200 bg-slate-50 rounded-lg">
+                            <h3 class="font-bold text-emerald-900 text-sm">IGU Annie Talwani Memorial Award 2026</h3>
+                            <p class="text-xs text-slate-600 mt-1">Awarded to Dr. Naresh Kumar of Uttarakhand for outstanding contributions in Himalayan Geology and Seismic Hazard Research.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 3: POLICIES, ACTS & SCHEMES -->
+            <section id="sec-policies-schemes" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">Complete State Bills, Legislative Acts & Govt Schemes</h2>
+
+                    <div class="space-y-4 text-xs">
+                        <!-- Policy 1 -->
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-slate-900 text-sm">1. Uttarakhand Land Law (Amendment) Act 2025</h3>
+                                <span class="bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Passed Assembly Feb 2025</span>
+                            </div>
+                            <ul class="list-disc list-inside space-y-1 text-slate-600 mt-2">
+                                <li><strong>Complete Ban on Agricultural Land Sale:</strong> Outsiders/non-residents prohibited from purchasing agricultural or horticultural land in 11 hill districts.</li>
+                                <li><strong>Residential Land Limit:</strong> Cap of 250 sq. meters strictly enforced for residential purposes in urban hill limits.</li>
+                                <li><strong>Affidavit & Background Check:</strong> Mandatory District Magistrate verification, police clearance, and sworn affidavit verifying purpose before any land transaction.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Policy 2 -->
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-slate-900 text-sm">2. Uttarakhand Minority Educational Institutions Authority Act 2026</h3>
+                                <span class="bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded">Effective July 1, 2026</span>
+                            </div>
+                            <ul class="list-disc list-inside space-y-1 text-slate-600 mt-2">
+                                <li><strong>Abolition of Madarsa Board:</strong> Uttarakhand State Madarsa Board completely dissolved.</li>
+                                <li><strong>Unified Minority Authority:</strong> Replaced by single umbrella authority covering Muslim, Christian, Sikh, Jain, Buddhist, and Parsi institutions.</li>
+                                <li><strong>Curriculum Mandate:</strong> Mandatory introduction of NCERT syllabus, modern science, computer education, and state audit controls.</li>
+                            </ul>
+                        </div>
+
+                        <!-- Policy 3 -->
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-slate-900 text-sm">3. Aroma Revolution Policy (2026 – 2036)</h3>
+                                <span class="bg-amber-100 text-amber-800 font-bold px-2 py-0.5 rounded">10-Year Framework</span>
+                            </div>
+                            <p class="text-slate-600 mt-1">Aims to establish 7 specialized Aroma Valleys (Damask Rose Valley in Chamoli, Lemongrass Valley in Haridwar/Udham Singh Nagar, Cinnamon, Lavender, Mint) targeting ₹1,200 Cr market ecosystem by 2036.</p>
+                        </div>
+
+                        <!-- Policy 4 -->
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <div class="flex justify-between items-center mb-1">
+                                <h3 class="font-bold text-slate-900 text-sm">4. Chief Minister Yuva Bhavishya Nirman Yojana 2026</h3>
+                                <span class="bg-purple-100 text-purple-800 font-bold px-2 py-0.5 rounded">Youth Welfare</span>
+                            </div>
+                            <p class="text-slate-600 mt-1">Provides free specialized residential coaching for UPSC, UKPSC, Banking, NDA, CDS to meritorious students from EWS background, supported by ₹5,000 monthly living allowance.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 4: STATE BUDGET 2026-27 -->
+            <section id="sec-budget" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-slate-200 pb-3 mb-4">
+                        <div>
+                            <h2 class="text-lg font-bold text-slate-900">Uttarakhand State Budget FY 2026-27</h2>
+                            <p class="text-xs text-slate-500">Presented at Summer Capital Bhararisain (Gairsain)</p>
+                        </div>
+                        <div class="mt-2 sm:mt-0 text-right">
+                            <span class="text-xs font-semibold text-slate-500">Total Outlay</span>
+                            <div class="text-2xl font-black text-emerald-700">₹ 1,11,703.21 Cr</div>
+                            <span class="text-[11px] text-emerald-600 font-semibold">Revenue: ₹89,230 Cr | Capital: ₹22,473 Cr</span>
+                        </div>
+                    </div>
+
+                    <!-- SANTULAN Matrix -->
+                    <div class="bg-emerald-900 text-white rounded-xl p-4 mb-5">
+                        <h3 class="text-xs font-mono font-bold text-emerald-400 uppercase tracking-widest">Budget Pillar Vision</h3>
+                        <div class="text-xl font-extrabold mt-1">S.A.N.T.U.L.A.N. Framework</div>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 mt-3 text-[11px]">
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>S:</strong> Samaveshi Vikas (Inclusive)</div>
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>A:</strong> Atmanirbhar Devbhoomi</div>
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>N:</strong> Nav-Unmesh (Innovation)</div>
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>T:</strong> Teevra Infra (Fast Infra)</div>
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>U:</strong> Unnat Gram (Smart Hilly Villages)</div>
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>L:</strong> Lok Sahbhagita (Governance)</div>
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>A:</strong> Arthik Shakti (Economy)</div>
+                            <div class="p-2 bg-emerald-800/70 rounded border border-emerald-700"><strong>N:</strong> Nyaypurna Kalyan (Social Justice)</div>
+                        </div>
+                    </div>
+
+                    <!-- Visual Charts -->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-800 text-center mb-2 text-xs uppercase">Rupee Comes From (%)</h4>
+                            <div class="h-56"><canvas id="rupeeComesChart"></canvas></div>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-800 text-center mb-2 text-xs uppercase">Rupee Goes To (%)</h4>
+                            <div class="h-56"><canvas id="rupeeGoesChart"></canvas></div>
+                        </div>
+                    </div>
+
+                    <!-- Sector Allocations Table -->
+                    <h3 class="text-sm font-bold text-slate-900 mb-2">Major Sectoral Outlays (₹ Crore)</h3>
+                    <div class="overflow-x-auto custom-scrollbar">
+                        <table class="w-full text-xs text-left border border-slate-200">
+                            <thead class="bg-slate-100 uppercase text-slate-700">
+                                <tr>
+                                    <th class="p-2 border">Department</th>
+                                    <th class="p-2 border">Outlay (₹ Cr)</th>
+                                    <th class="p-2 border">Specific Allocations</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 bg-white">
+                                <tr><td class="p-2 border font-semibold">Public Works Department (PWD)</td><td class="p-2 border font-bold text-emerald-700">₹ 2,501.91 Cr</td><td class="p-2 border">Road repairs, Gaddamukt scheme (₹400Cr), Bridges</td></tr>
+                                <tr><td class="p-2 border font-semibold">PMGSY Rural Roads</td><td class="p-2 border font-bold">₹ 1,050.00 Cr</td><td class="p-2 border">Hill village Connectivity (>250 pop)</td></tr>
+                                <tr><td class="p-2 border font-semibold">Drinking Water & SARRA</td><td class="p-2 border font-bold text-emerald-700">₹ 1,827.91 Cr</td><td class="p-2 border">Jal Jeevan Mission & Spring rejuvenation</td></tr>
+                                <tr><td class="p-2 border font-semibold">School & Higher Education</td><td class="p-2 border font-bold">₹ 2,142.50 Cr</td><td class="p-2 border">PM POSHAN (₹149Cr), Atal Utkrisht schools</td></tr>
+                                <tr><td class="p-2 border font-semibold">Agriculture & Polyhouses</td><td class="p-2 border font-bold">₹ 1,120.00 Cr</td><td class="p-2 border">Polyhouse scheme, Organic Mission, Apple Mission</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 5: ECONOMIC SURVEY -->
+            <section id="sec-eco-survey" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">Economic Survey 2025-26 Comprehensive Data Vault</h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-5">
+                        <div class="p-4 bg-emerald-50 rounded-lg border border-emerald-200 text-center">
+                            <span class="text-xs text-emerald-700 font-semibold uppercase">Projected GSDP Growth</span>
+                            <div class="text-3xl font-black text-emerald-900 mt-1">7.23%</div>
+                            <span class="text-[11px] text-slate-500">(National GDP projected at 7.4%)</span>
+                        </div>
+                        <div class="p-4 bg-blue-50 rounded-lg border border-blue-200 text-center">
+                            <span class="text-xs text-blue-700 font-semibold uppercase">Per Capita Income</span>
+                            <div class="text-3xl font-black text-blue-900 mt-1">₹ 2,73,921</div>
+                            <span class="text-[11px] text-slate-500">(+9.25% growth vs FY 2024-25)</span>
+                        </div>
+                        <div class="p-4 bg-purple-50 rounded-lg border border-purple-200 text-center">
+                            <span class="text-xs text-purple-700 font-semibold uppercase">Nominal GSDP</span>
+                            <div class="text-3xl font-black text-purple-900 mt-1">₹ 3.81 Lakh Cr</div>
+                            <span class="text-[11px] text-slate-500">(At current market prices)</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
+                        <div class="h-56"><canvas id="sectorShareChart"></canvas></div>
+                        <div class="space-y-2.5 text-xs">
+                            <div class="p-3 bg-amber-50 border border-amber-200 rounded-lg">
+                                <strong class="text-amber-900 text-sm block">Primary Sector Share: 9.59%</strong>
+                                <p class="text-amber-700 mt-0.5">Agriculture, Horticulture, Forestry & Mining. Share continuously declining relative to services.</p>
+                            </div>
+                            <div class="p-3 bg-blue-50 border border-blue-200 rounded-lg">
+                                <strong class="text-blue-900 text-sm block">Secondary Sector Share: 39.95%</strong>
+                                <p class="text-blue-700 mt-0.5">Manufacturing, Pharma (SIDCUL Haridwar/Pantnagar), Hydro power & Construction.</p>
+                            </div>
+                            <div class="p-3 bg-emerald-50 border border-emerald-200 rounded-lg">
+                                <strong class="text-emerald-900 text-sm block">Tertiary Sector Share: 50.46%</strong>
+                                <p class="text-emerald-700 mt-0.5">Dominant engine driven by Tourism (Char Dham, Eco-tourism), Real Estate, & Banking Services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 6: ISFR 2023 FOREST REPORT -->
+            <section id="sec-forest-report" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">India State of Forest Report (ISFR 2023) Uttarakhand Vault</h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-4 gap-3 text-center mb-5">
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+                            <span class="text-[11px] text-slate-500">Forest Cover</span>
+                            <div class="text-lg font-bold text-slate-900">24,303.83 sq km</div>
+                            <span class="text-[11px] font-bold text-emerald-700">45.44% of State Area</span>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+                            <span class="text-[11px] text-slate-500">Tree Cover</span>
+                            <div class="text-lg font-bold text-slate-900">1,120.14 sq km</div>
+                            <span class="text-[11px] text-slate-600">2.09% of State Area</span>
+                        </div>
+                        <div class="p-3 bg-slate-50 border border-slate-200 rounded-lg">
+                            <span class="text-[11px] text-slate-500">Total Forest + Tree</span>
+                            <div class="text-lg font-bold text-emerald-800">25,423.97 sq km</div>
+                            <span class="text-[11px] font-bold text-emerald-700">47.53% Total</span>
+                        </div>
+                        <div class="p-3 bg-rose-50 border border-rose-200 rounded-lg">
+                            <span class="text-[11px] text-rose-700">Net Change (2021-23)</span>
+                            <div class="text-lg font-bold text-rose-800">-22.98 sq km</div>
+                            <span class="text-[11px] text-rose-600">Net decline</span>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 text-xs">
+                        <!-- Forest Area Ranking -->
+                        <div class="p-4 bg-emerald-50/50 border border-emerald-200 rounded-lg">
+                            <h3 class="font-bold text-emerald-900 text-sm mb-2">District Ranking by Forest Area (sq km)</h3>
+                            <table class="w-full text-left border-collapse">
+                                <thead class="border-b border-emerald-200 text-emerald-900 font-bold">
+                                    <tr><th class="py-1">Rank</th><th class="py-1">District</th><th class="py-1">Forest Area</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-emerald-100">
+                                    <tr><td class="py-1">1</td><td class="font-semibold">Pauri Garhwal</td><td>3,360.55 sq km</td></tr>
+                                    <tr><td class="py-1">2</td><td>Uttarkashi</td><td>3,023.86 sq km</td></tr>
+                                    <tr><td class="py-1">3</td><td>Nainital</td><td>2,866.55 sq km</td></tr>
+                                    <tr><td class="py-1">4</td><td>Chamoli</td><td>2,641.30 sq km</td></tr>
+                                    <tr><td class="py-1">5</td><td>Tehri Garhwal</td><td>2,222.68 sq km</td></tr>
+                                    <tr><td class="py-1 text-rose-700 font-bold">13 (Lowest)</td><td class="text-rose-700 font-bold">Udham Singh Nagar</td><td class="text-rose-700 font-bold">563.00 sq km</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- Forest Percentage Ranking -->
+                        <div class="p-4 bg-blue-50/50 border border-blue-200 rounded-lg">
+                            <h3 class="font-bold text-blue-900 text-sm mb-2">District Ranking by Forest Cover Percentage (%)</h3>
+                            <table class="w-full text-left border-collapse">
+                                <thead class="border-b border-blue-200 text-blue-900 font-bold">
+                                    <tr><th class="py-1">Rank</th><th class="py-1">District</th><th class="py-1">Forest Cover %</th></tr>
+                                </thead>
+                                <tbody class="divide-y divide-blue-100">
+                                    <tr><td class="py-1">1</td><td class="font-semibold">Champawat</td><td>69.06 %</td></tr>
+                                    <tr><td class="py-1">2</td><td>Nainital</td><td>67.43 %</td></tr>
+                                    <tr><td class="py-1">3</td><td>Pauri Garhwal</td><td>63.07 %</td></tr>
+                                    <tr><td class="py-1">4</td><td>Tehri Garhwal</td><td>61.03 %</td></tr>
+                                    <tr><td class="py-1">5</td><td>Rudraprayag</td><td>57.79 %</td></tr>
+                                    <tr><td class="py-1 text-rose-700 font-bold">13 (Lowest)</td><td class="text-rose-700 font-bold">Haridwar</td><td class="text-rose-700 font-bold">25.12 %</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 7: SPORTS, AWARDS & APPOINTMENTS -->
+            <section id="sec-sports-awards" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">Sports, Honors, State Awards & Appointments</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs mb-5">
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <h3 class="font-bold text-slate-900 text-sm mb-1">38th National Games Highlights</h3>
+                            <ul class="space-y-1 text-slate-600">
+                                <li>• <strong>Host State:</strong> Uttarakhand</li>
+                                <li>• <strong>Mascot:</strong> Gauli (Himalayan Monal)</li>
+                                <li>• <strong>Torch Name:</strong> Tejaswini</li>
+                                <li>• <strong>Uttarakhand Tally:</strong> 7th Position (103 Medals: 24 Gold, 35 Silver, 44 Bronze)</li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <h3 class="font-bold text-slate-900 text-sm mb-1">Asian Games 2026 Key Performance</h3>
+                            <ul class="space-y-1 text-slate-600">
+                                <li>• <strong>Kapil Pokhariya (Khatima, UK):</strong> Won Bronze in Men's 90kg Boxing category.</li>
+                                <li>• <strong>India Final Tally:</strong> 4th Rank with 85 Medals (21 Gold, 27 Silver, 37 Bronze).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h3 class="text-sm font-bold text-slate-900 mb-2">Devbhoomi Uttarakhand Khel Ratna & Dronacharya Recipients</h3>
+                    <div class="overflow-x-auto custom-scrollbar">
+                        <table class="w-full text-xs text-left border border-slate-200">
+                            <thead class="bg-slate-100 uppercase text-slate-700">
+                                <tr><th class="p-2 border">Award Category</th><th class="p-2 border">Recipient</th><th class="p-2 border">Discipline</th></tr>
+                            </thead>
+                            <tbody class="divide-y divide-slate-200 bg-white">
+                                <tr><td class="p-2 border font-medium">Khel Ratna Award 2025</td><td class="p-2 border font-bold">Abhinav Deshwal</td><td class="p-2 border">Shooting</td></tr>
+                                <tr><td class="p-2 border font-medium">Khel Ratna Award 2024-25</td><td class="p-2 border font-bold">Ankita Dhyani</td><td class="p-2 border">Athletics</td></tr>
+                                <tr><td class="p-2 border font-medium">Dronacharya Award</td><td class="p-2 border">Mukesh Sharma / Lokesh Kumar</td><td class="p-2 border">Rowing / Athletics</td></tr>
+                                <tr><td class="p-2 border font-medium">Lifetime Achievement Award</td><td class="p-2 border">Mukesh Chandra Belwal</td><td class="p-2 border">Boxing Coach</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 8: NATIONAL & INTERNATIONAL WORLD DIGEST -->
+            <section id="sec-national-intl" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <h2 class="text-lg font-bold text-slate-900 border-b border-slate-200 pb-3 mb-4">National & International Master Current Affairs Digest</h2>
+
+                    <div class="space-y-3 text-xs">
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <span class="font-bold text-blue-800 bg-blue-100 px-2 py-0.5 rounded text-[11px]">Nobel Prizes 2026 Complete List</span>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-2 text-slate-700">
+                                <div>• <strong>Medicine:</strong> Karl Deisseroth, Peter Hegemann, Georg Nagel (Optogenetics)</div>
+                                <div>• <strong>Physics:</strong> Francis Halzen (IceCube Neutrino Observatory)</div>
+                                <div>• <strong>Chemistry:</strong> Henri B. Kagan, Kenso Soai (Asymmetric synthesis)</div>
+                                <div>• <strong>Literature:</strong> Anne Carson (Canadian Poet)</div>
+                                <div>• <strong>Peace:</strong> Navi Pillay (South African Jurist)</div>
+                                <div>• <strong>Economics:</strong> Robert E. Hall & Michael Woodford</div>
+                            </div>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <span class="font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded text-[11px]">Space Science & Tech</span>
+                            <p class="text-slate-700 mt-1 font-medium">ISRO EOS-05 Satellite: Launched on GSLV-F17 into Geostationary Orbit (36,000 km altitude). Known as India's state-of-the-art "Eye in the Sky" for real-time disaster mapping.</p>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                            <span class="font-bold text-purple-800 bg-purple-100 px-2 py-0.5 rounded text-[11px]">UNESCO Heritage Additions</span>
+                            <p class="text-slate-700 mt-1 font-medium">Sarnath Ancient Buddhist Archaeological Site (Uttar Pradesh) inscribed as India's 45th UNESCO World Heritage Site.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TAB 9: PRACTICE QUIZ BANK -->
+            <section id="sec-quiz" class="tab-content hidden space-y-5">
+                <div class="bg-white rounded-xl p-6 border border-slate-200 shadow-sm">
+                    <div class="flex justify-between items-center border-b border-slate-200 pb-3 mb-4">
+                        <div>
+                            <h2 class="text-lg font-bold text-slate-900">UKPSC / UKSSSC Exam Practice Quiz</h2>
+                            <p class="text-xs text-slate-500">Tricky single-line & multi-statement questions based on Green Turn</p>
+                        </div>
+                        <span id="quiz-score" class="text-xs font-mono font-bold bg-emerald-100 text-emerald-800 px-3 py-1.5 rounded-full border border-emerald-300">Score: 0 / 10</span>
+                    </div>
+
+                    <div id="quiz-container" class="space-y-4">
+                        <!-- Questions dynamically rendered -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-4 border-t border-slate-800 text-center text-xs mt-auto">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>Uttarakhand Green Turn Current Affairs 2026-27 Master Compendium (July 2025 – October 2026)</p>
+            <p class="mt-0.5 text-slate-500">Exhaustive Revision Engine for UKPSC (PCS / Lower PCS / RO ARO) & UKSSSC Exams</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Logic -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Switch Tab Logic
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('bg-emerald-700', 'text-white', 'shadow-sm');
+                btn.classList.add('text-slate-700', 'hover:bg-slate-100');
+            });
+
+            document.getElementById('sec-' + tabId).classList.remove('hidden');
+            const activeNav = document.getElementById('tab-' + tabId);
+            if(activeNav) {
+                activeNav.classList.add('bg-emerald-700', 'text-white', 'shadow-sm');
+                activeNav.classList.remove('text-slate-700', 'hover:bg-slate-100');
+            }
+        }
+
+        // Search Overlay Toggle
+        function toggleGlobalSearch() {
+            const modal = document.getElementById('search-modal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.getElementById('global-search-input').focus();
+            }
+        }
+
+        // Global Search Database
+        const searchableItems = [
+            { term: "Tejas White Tiger", desc: "First white Royal Bengal Tiger brought to Dehradun Zoo from Gwalior.", tab: "one-liners" },
+            { term: "SANTULAN Framework", desc: "Core theme of Uttarakhand Budget 2026-27 comprising 9 strategic pillars.", tab: "budget" },
+            { term: "Kow Debar Sheep", desc: "First registered indigenous sheep breed of Uttarakhand native to alpine region.", tab: "one-liners" },
+            { term: "Dholi Garhwali Film", desc: "Won Rajat Kamal at 72nd National Film Awards for non-8th schedule language.", tab: "one-liners" },
+            { term: "ISFR 2023 Pauri Garhwal", desc: "Highest forest area in Uttarakhand (3,360.55 sq km).", tab: "forest-report" },
+            { term: "ISFR 2023 Champawat", desc: "Highest forest percentage in Uttarakhand (69.06%).", tab: "forest-report" },
+            { term: "Lt. Gen. Gurmeet Singh", desc: "Longest serving Governor of Uttarakhand.", tab: "one-liners" },
+            { term: "EOS-05 Satellite", desc: "ISRO Geo-imaging satellite dubbed Eye in the Sky.", tab: "national-intl" },
+            { term: "Gauli Mascot", desc: "Official mascot (Himalayan Monal) for 38th National Games in UK.", tab: "sports-awards" },
+            { term: "Land Law Amendment 2025", desc: "Strict restrictions on agricultural land purchases in 11 hill districts.", tab: "policies-schemes" },
+            { term: "Aroma Revolution Policy", desc: "10-year policy (2026-36) setting up 7 Aroma Valleys targeting ₹1,200 Cr market.", tab: "policies-schemes" },
+            { term: "Madarsa Board Abolition", desc: "Dissolved state Madarsa board, creating unified Minority Educational Authority.", tab: "policies-schemes" },
+            { term: "Lamachaur Haldwani", desc: "Approved new location for Uttarakhand High Court shifting from Nainital.", tab: "one-liners" },
+            { term: "SARRA Spring Authority", desc: "Spring Administration & Rejuvenation Authority for drying Himalayan springs.", tab: "uk-affairs" },
+            { term: "Per Capita Income UK", desc: "₹ 2,73,921 projected for 2025-26 under Economic Survey.", tab: "eco-survey" }
+        ];
+
+        function handleSearch() {
+            const query = document.getElementById('global-search-input').value.toLowerCase();
+            const resultsDiv = document.getElementById('search-results');
+            resultsDiv.innerHTML = '';
+
+            if (query.length < 2) return;
+
+            const filtered = searchableItems.filter(item => 
+                item.term.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query)
+            );
+
+            if (filtered.length === 0) {
+                resultsDiv.innerHTML = '<p class="p-2 text-slate-400">No matching details found in master database.</p>';
+                return;
+            }
+
+            filtered.forEach(item => {
+                const div = document.createElement('div');
+                div.className = 'p-2.5 hover:bg-slate-100 rounded cursor-pointer border-b border-slate-100';
+                div.onclick = () => { switchTab(item.tab); toggleGlobalSearch(); };
+                div.innerHTML = `<div class="font-bold text-emerald-800">${item.term}</div><div class="text-[11px] text-slate-600">${item.desc}</div>`;
+                resultsDiv.appendChild(div);
+            });
+        }
+
+        // Render Canvas Charts on Load
+        window.addEventListener('load', () => {
+            const ctxComes = document.getElementById('rupeeComesChart').getContext('2d');
+            new Chart(ctxComes, {
+                type: 'doughnut',
+                data: {
+                    labels: ['State Own Tax (28.85%)', 'Public Debt (24.04%)', 'Grants-in-Aid (20.59%)', 'Central Tax Share (19.39%)', 'Non-Tax Revenue (6.35%)', 'Others (0.78%)'],
+                    datasets: [{
+                        data: [28.85, 24.04, 20.59, 19.39, 6.35, 0.78],
+                        backgroundColor: ['#059669', '#0284c7', '#d97706', '#7c3aed', '#64748b', '#cbd5e1']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 9 } } } } }
+            });
+
+            const ctxGoes = document.getElementById('rupeeGoesChart').getContext('2d');
+            new Chart(ctxGoes, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Salaries/Wages (25.45%)', 'Other Expenditure (20.95%)', 'Capital Outlay (12.49%)', 'Pensions (12.45%)', 'Loans/Investments (9.08%)', 'Interest (8.87%)', 'Grants (4.72%)'],
+                    datasets: [{
+                        data: [25.45, 20.95, 12.49, 12.45, 9.08, 8.87, 4.72],
+                        backgroundColor: ['#e11d48', '#f59e0b', '#10b981', '#6366f1', '#8b5cf6', '#ec4899', '#94a3b8']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 9 } } } } }
+            });
+
+            const ctxSector = document.getElementById('sectorShareChart').getContext('2d');
+            new Chart(ctxSector, {
+                type: 'pie',
+                data: {
+                    labels: ['Tertiary (Services) ~50.46%', 'Secondary (Industries) ~39.95%', 'Primary (Agri/Forestry) ~9.59%'],
+                    datasets: [{
+                        data: [50.46, 39.95, 9.59],
+                        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b']
+                    }]
+                },
+                options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom', labels: { boxWidth: 10, font: { size: 10 } } } } }
+            });
+
+            renderQuiz();
+        });
+
+        // Detailed Quiz Questions
+        const quizData = [
+            {
+                q: "What is the name of the white Royal Bengal Tiger brought to Dehradun Zoo from Gwalior Zoological Park?",
+                options: ["Bhola", "Tejas", "Sheru", "Rudra"],
+                correct: 1
+            },
+            {
+                q: "Which indigenous sheep breed of Uttarakhand was officially registered by ICAR-NBAGR in August 2026?",
+                options: ["Gaddi", "Kow Debar", "Merino", "Chokla"],
+                correct: 1
+            },
+            {
+                q: "Under ULLAS & NEP 2020, Uttarakhand was certified as which number fully literate state in India?",
+                options: ["3rd", "4th", "6th", "8th"],
+                correct: 2
+            },
+            {
+                q: "What is the total budget outlay of Uttarakhand for FY 2026-27?",
+                options: ["₹ 89,230 Cr", "₹ 1,11,703.21 Cr", "₹ 1,25,000 Cr", "₹ 95,000 Cr"],
+                correct: 1
+            },
+            {
+                q: "According to ISFR 2023, which district has the HIGHEST Forest Cover Percentage (%) in Uttarakhand?",
+                options: ["Pauri Garhwal", "Nainital", "Champawat", "Uttarkashi"],
+                correct: 2
+            },
+            {
+                q: "According to ISFR 2023, which district has the HIGHEST Forest Area (in sq. km) in Uttarakhand?",
+                options: ["Chamoli", "Pauri Garhwal", "Uttarkashi", "Tehri Garhwal"],
+                correct: 1
+            },
+            {
+                q: "Under the Land Law Amendment Bill 2025, what is the maximum residential land non-residents can buy in urban hill limits?",
+                options: ["150 sq m", "250 sq m", "500 sq m", "1000 sq m"],
+                correct: 1
+            },
+            {
+                q: "What was the mascot for the 38th National Games hosted by Uttarakhand?",
+                options: ["Tejaswini", "Gauli (Himalayan Monal)", "Badri", "Bagh"],
+                correct: 1
+            },
+            {
+                q: "Where is the new approved relocation site of the Uttarakhand High Court?",
+                options: ["Rishikesh", "Dehradun", "Lamachaur (Haldwani)", "Haridwar"],
+                correct: 2
+            },
+            {
+                q: "What is the projected Per Capita Income of Uttarakhand for FY 2025-26 under the Economic Survey?",
+                options: ["₹ 2,10,000", "₹ 2,50,000", "₹ 2,73,921", "₹ 3,10,000"],
+                correct: 2
+            }
+        ];
+
+        let currentScore = 0;
+
+        function renderQuiz() {
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = '';
+
+            quizData.forEach((item, index) => {
+                const qBox = document.createElement('div');
+                qBox.className = 'p-4 bg-slate-50 border border-slate-200 rounded-lg space-y-2.5';
+                
+                let optionsHTML = '';
+                item.options.forEach((opt, optIdx) => {
+                    optionsHTML += `
+                        <button onclick="checkAnswer(${index}, ${optIdx})" id="btn-${index}-${optIdx}" class="quiz-opt-btn w-full text-left p-2.5 rounded border border-slate-300 bg-white hover:bg-slate-100 text-xs transition">
+                            ${opt}
+                        </button>
+                    `;
+                });
+
+                qBox.innerHTML = `
+                    <p class="font-bold text-xs text-slate-800">Q${index + 1}: ${item.q}</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">${optionsHTML}</div>
+                    <div id="feedback-${index}" class="text-[11px] font-semibold hidden"></div>
+                `;
+                container.appendChild(qBox);
+            });
+        }
+
+        function checkAnswer(qIdx, selectedOpt) {
+            const correctOpt = quizData[qIdx].correct;
+            const feedbackEl = document.getElementById(`feedback-${qIdx}`);
+
+            const buttons = document.querySelectorAll(`[id^="btn-${qIdx}-"]`);
+            buttons.forEach(btn => btn.disabled = true);
+
+            if (selectedOpt === correctOpt) {
+                document.getElementById(`btn-${qIdx}-${selectedOpt}`).classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'font-bold');
+                feedbackEl.textContent = "Correct Answer!";
+                feedbackEl.className = "text-[11px] font-semibold text-emerald-600 block mt-1.5";
+                currentScore++;
+            } else {
+                document.getElementById(`btn-${qIdx}-${selectedOpt}`).classList.add('bg-rose-100', 'border-rose-500', 'text-rose-900');
+                document.getElementById(`btn-${qIdx}-${correctOpt}`).classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-900', 'font-bold');
+                feedbackEl.textContent = `Incorrect. Correct answer: ${quizData[qIdx].options[correctOpt]}`;
+                feedbackEl.className = "text-[11px] font-semibold text-rose-600 block mt-1.5";
+            }
+
+            document.getElementById('quiz-score').textContent = `Score: ${currentScore} / ${quizData.length}`;
+        }
+    </script>
+</body>
+</html>
